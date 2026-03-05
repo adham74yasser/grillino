@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:var(--font-Roboto-Regular); 
+}
+
+@font-face {
+  font-family: 'Cookie_Regular';
+  src: url(../font/Cookie/Cookie-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Flavors_Regular';
+  src: url(../font/Flavors/Flavors-Regular.ttf);
+}
+@font-face {
+  font-family: 'Rufina-Bold';
+  src: url(../font/Rufina/Rufina-Bold.ttf);
+}
+@font-face {
+  font-family: 'Rufina-Regular';
+  src: url(../font/Rufina/Rufina-Regular.ttf)
+}
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url(../font/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(../font/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto-SemiBold';
+  src: url(../font/Roboto/Roboto-SemiBold.ttf) format('truetype');
+}
+
+:root {
+    --bg1-color:#fa8507;
+    --bg2-color:#b80011;
+    --bg3-color:#ffe9b5;
+    --font-cookie-color: #fdde18;
+    --rug-color:#fff;
+    --font-cookie:'Cookie_Regular', sans-serif;
+    --font-Flavors:'Flavors_Regular', sans-serif;
+    --font-Rufina-bold:'Rufina-Bold ', sans-serif;
+    --font-Rufina-Regular:'Rufina-Regular', sans-serif;
+    --font-Roboto-SemiBold :'Roboto-SemiBold ', sans-serif;
+    --font-Roboto-Regular :'Roboto-Regular ', sans-serif;
+    --font-Roboto-Bold:'Roboto-Bold', sans-serif;
+    --font-Roboto-Black:'Roboto-Black', sans-serif;
+}
+
+
+/* start nav */
+nav {
+    background-color: #000;
+    padding-bottom: 20px;
+}
+
+nav .navigation {
+    margin-top: 10px;
+    box-shadow: 0 0 15px 0 var(--bg1-color) ;
+}
+/* end nav */
+/* start header */
+
+header {
+    height: calc(50vh );
+    background: url(../img/shop/breadcumb-bg-1-1.jpg) center / cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c9;
+    backdrop-filter: blur(2px);
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 100px;
+    font-family: var(--font-Rufina-Regular);
+    text-transform: uppercase;
+}
+
+header p {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    background-color: var(--rug-color);
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #7b7b7b;
+    transform: translate(50% , 50%);
+}
+
+header p i{
+    color: var(--bg1-color);
+}
+
+/* end header */
+/* start main */
+
+.hidden {
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #00000084;
+    backdrop-filter: blur(10px);
+    transition: 0.8s;
+    display: none;
+
+}
+.containerMain::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+    transform: translateX(110%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999999999;
+    width: 500px;
+    height: 100vh;
+    box-shadow: 0 0 15px 0 var(--bg1-color);
+    background-color:#000;
+    border-radius: 20px 0 0 20px ;
+    justify-content: start !important;
+    flex-direction: column;
+    padding: 30px 10px !important;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.containerMain {
+    padding: 10px  ;
+    width: 100%;
+    max-height: 1000px;
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: start !important;
+    gap: 20px !important;
+}
+
+main .card_main {
+    width: 100%;
+    padding: 10px 20px ;
+    background-color: #7b7b7b;
+    border-radius: 20px;
+    box-shadow:  0 0 10px 0 var(--bg1-color);
+    justify-content: space-between;
+}
+
+main .card_main .imgCard {
+    width: 100px;
+    height: 100px;
+}
+
+main .card_main .imgCard img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+main .card_main .dicCard{
+    flex-direction: column;
+    align-items: start;
+}
+
+main .card_main .dicCard b{
+    font-family: var(--font-Roboto-Bold);
+}
+
+main .card_main .connate i
+,main .card_main .order_btn i{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--bg2-color);
+    transition: 0.5s;
+}
+
+main .card_main .connate i:hover
+,main .card_main .order_btn i:hover{
+    transform: scale(1.1);
+    color: var(--bg1-color);
+    cursor: pointer;
+}
+main .card_main .connate span{
+    border: 2px solid var(--bg1-color);
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+.total {
+    width: 100%;
+    justify-content: space-around;
+    color: #fff;
+    border-top: 2px solid var(--bg1-color);
+    padding: 20px ;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+/* end main */
+/* start container */
+.container_shop {
+    padding: 50px 150px;
+    gap: 20px;
+    background-color: var(--bg4-color);
+}
+.head_container {
+    justify-content: space-between;
+}
+.head_container .title p{
+    font-size: 20px;
+    font-family: var(--font-Roboto-Bold);
+    text-transform: capitalize;
+}
+.head_container .sort{
+    position: relative;
+    text-transform: capitalize;
+    width: 18%;
+}
+
+.head_container .sort h4{
+    border: 2px solid #b4b2b2;
+    color: #7b7b7b;
+    width: 100%;
+    cursor: pointer;
+    padding: 15px 20px ;
+    justify-content: space-between;
+}
+
+.head_container .sort h4 i{
+    color: var(--bg1-color);
+    padding-left: 20px;
+    position: absolute;
+    right: 20px;
+    transition: 0.5s;
+}
+
+.head_container .sort h4 i.rot{
+    transform: rotate(180deg);
+}
+
+
+.head_container .sort .list{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 2px solid #b4b2b2;
+    color: #7b7b7b;
+    width: 100%;
+    background-color: var(--rug-color);
+    transform: scale(0);
+}
+
+.head_container .sort .list p{
+    padding: 10px 20px;
+    width: 100%;
+
+}
+
+.head_container .sort .list p:hover{
+    background-color: var(--bg1-color);
+    color: var(--rug-color);
+    cursor: pointer;
+}
+
+.cards {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.card {
+    width: calc((100% - 60px) / 3);
+    background-color: var(--rug-color);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px 0 var(--bg1-color);
+    cursor: pointer;
+}
+
+.card .dic {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px ;
+}
+
+.card .dic p {
+    color: var(--bg1-color);
+    font-family: var(--font-Roboto-Bold);
+}
+
+.card .dic del {
+    color: #ccc;
+    text-decoration: line-through;
+    padding: 0 10px ;
+}
+
+.card .dic b {
+    font-family: var(--font-Rufina-Regular);
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card .dic .order_btn span {
+    border: 2px solid var(--bg1-color);
+    padding: 10px 20px;
+    font-family: var(--font-Roboto-Bold);
+    color: var(--text-color);
+    background-color: var(--bg1-color);
+    transition: 0.5s;
+}
+
+.card .dic .order_btn i {
+    border: 2px solid var(--bg1-color);
+    padding: 12px 0;
+    color: var(--text-color);
+    background-color: var(--bg1-color);
+    transition: 0.5s;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.card .dic .order_btn  *:hover{
+    border: 2px solid var(--bg2-color);
+    color: var(--bg2-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+/* end container */
+

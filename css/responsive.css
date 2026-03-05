@@ -1,0 +1,313 @@
+/* start responsive shop */
+@media (max-width : 1200px) {
+    body > * {
+    padding: 0 20px 20px ;
+    }
+
+
+    /* start nav */
+    .phone  p {
+        display: none;
+    }
+    .container_shop{
+        padding: 50px 10px ;
+    }
+
+    /* end nav */
+    /* start responsive home */
+    /* start header */
+    .container_hero {
+        padding: 0 70px;
+    }
+    .parent {
+        width: 50%;
+    }
+    .data_title b {
+        font-size: 40px;
+    }
+    .data_title h1 {
+        font-size:50px;
+    }
+    /* end header */
+    /* start about */
+    .container_about {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .panner_about  {
+        display: none;
+    }
+    /* end about */
+    /* start menu_pizza  */
+    .show_menu {
+        width: 180%;
+    }
+    .card_menu {
+        height: 200px;
+        padding: 20px 20px ;
+    }
+    .card_menu b {
+        font-size: 16px; 
+    }
+    .card_menu p {
+        font-size: 16px; 
+    }
+    .icon_slide {
+        text-align: center;
+        width: 100%;
+    }
+    .icon_slide i {
+        font-size: 11px;
+    }
+    /* end menu_pizza  */
+    /* start AppDow  */
+    .container_app .img_app {
+        top: 153px;
+        width: 369px;
+    }
+    /* end menu_pizza  */
+    /* start best   */
+    .slide_3::after {
+        font-size: 26px;
+        width: 100px;
+        height: 100px;
+        right: 38px;
+    }
+    /* end best   */
+    /* start new  */
+    .container_new {
+        grid-template-columns: 1fr;
+    }
+    .list_news .box_news {
+        width: 74%;
+    }
+    /* end new  */
+    /* start insta   */
+    .insta .icon {
+        width: 100px;
+        height: 100px;
+    }
+    .insta .icon i {
+        font-size: 60px;
+    }
+
+    .insta .img_box img {
+        width: calc((100% - 50px) / 2);
+        height: calc((100% - 50px) / 2);
+    }
+    /* end insta   */
+    /* end responsive home */
+}
+@media (max-width : 992px) {
+
+    /* start nav */
+    .right > i     
+    ,.right p 
+    ,.container_infNav {
+        display: none;
+    }
+
+    /* end nav */
+    /* start cards */
+    .head_container .sort {
+        width: 30%;
+    }
+    .card {
+        width: calc((100% - 60px) / 2);
+    }
+    /* end cards */
+    /* start footer */
+    .container_foot {
+        grid-template-columns: repeat( 2 , 1fr);
+    }
+    /* end footer */
+    /* start responsive home */
+    /* start header */
+    .parent {
+        display: none;
+    }
+    /* end header */
+    /* start menu_pizza  */
+    .menu  {
+        display: none;
+    }
+    /* end menu_pizza  */
+    /* start AppDow  */
+    .container_app .title_app {
+        width: unset;
+    }
+
+    .img_app {
+        display: none;
+    }
+    /* end AppDow  */
+    /* start new  */
+    .container_new {
+        grid-template-columns: 1fr;
+    }
+    .list_news .box_news {
+        width: 74%;
+    }
+    /* end new  */
+    /* start insta   */
+    .insta .box {
+         width: unset; 
+    }
+    /* end insta   */
+    /* end responsive home */
+    
+}
+@media (max-width : 768px) {
+    /* start nav */
+    .logo.home ul {
+        display: none;
+    }
+    .fa-bars-staggered {
+        display: flex !important;
+    }
+    /* end nav */
+    /* start responsive home */
+    /* start about  */
+    .about {
+        height: unset;
+    }
+    .container_about {
+        grid-template-columns: 1fr;
+    }
+    /* end about  */
+    /* start menu_pizza  */
+    .menu_pizza, .burger_menu {
+        padding: 50px 0 !important;
+        background-color: var(--bg4-color);
+    }
+    .menu_pizza {
+        background-color: var(--bg3-color);
+    }
+    
+    .show_menu {
+        width: 100%;
+        height: unset;
+        gap: 50px;
+    }
+    .card_menu {
+        width:80%;
+    }
+    .burger_menu .show_menu .card_menu {
+        width: 80%;
+    }
+    .burger_menu .show_menu::after {
+        display: none;
+    }
+    /* end menu_pizza  */
+    /* start AppDow  */
+    .container_app .title_app h5 {
+        font-size: 30px;
+    }
+    .container_app::after {
+        background-color: var(--bg2-color);
+    }
+    /* end AppDow  */
+    /* start new  */
+    .container_new {
+        grid-template-columns: 1fr;
+    }
+    .list_news .box_news {
+        width:unset;
+    }
+    .title_food i {
+        right: -23px;
+    }
+    /* end new  */
+    /* start insta   */
+    .insta .box {
+         width: unset; 
+    }
+    .insta  {
+        display: none;
+    }
+    /* end insta   */
+    /* end responsive home */
+}
+@media (max-width : 576px) {
+
+    main {
+        width: unset;
+    }
+    /* start cards */
+    .head_container .sort {
+        width: 40%;
+    }
+    .card {
+        width: calc((100% - 60px) / 1);
+    }
+    /* end cards */
+    /* start footer */
+    .container_foot {
+        grid-template-columns:  1fr;
+    }
+    /* end footer */
+    /* start responsive home */
+    .title h2 {
+        font-size: 40px;
+    }
+    .head_sec p {
+        font-size: 35px;
+    }
+    /* start about  */
+    .about {
+        height: unset;
+    }
+    .container_about {
+        grid-template-columns: 1fr;
+    }
+    /* end about  */
+    /* start menu_pizza  */
+    .menu_pizza, .burger_menu {
+        padding: 50px 0 !important;
+        background-color: var(--bg4-color);
+    }
+    .menu_pizza {
+        background-color: var(--bg3-color);
+    }
+    
+    .show_menu {
+        width: 100%;
+        height: unset;
+        gap: 50px;
+    }
+    .card_menu {
+        width:80%;
+    }
+    .burger_menu .show_menu .card_menu {
+        width: 80%;
+    }
+    .burger_menu .show_menu::after {
+        display: none;
+    }
+    /* end menu_pizza  */
+    /* start AppDow  */
+    .container_app .title_app {
+        padding: 20px;
+    }
+    .title_btn span {
+        display: none;
+    }
+    /* end AppDow  */
+    /* start new  */
+    .box_news .title_food p {
+        font-size: 19px;
+    }
+    /* end new  */
+    /* start insta   */
+    .insta .box {
+         width: unset; 
+    }
+    .insta  {
+        display: none;
+    }
+    /* end insta   */
+    /* end responsive home */
+
+}
+
+
+/* end responsive shop */
